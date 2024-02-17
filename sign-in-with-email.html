@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./sign-in-with-email.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap"
+    />
+  </head>
+  <body>
+    <div class="sign-in-with-email">
+      <form class="container-951">
+        <h2 class="welcome-back1">Welcome back 👋</h2>
+        <div class="textbox-8">
+          <input class="frame144" type="text" />
+
+          <b class="password">Email</b>
+        </div>
+        <div class="textbox-91">
+          <input class="frame144" type="text" />
+
+          <b class="password">Password</b>
+        </div>
+        <input class="checkbox-7" type="checkbox" />
+
+        <a class="forgot-password" id="forgotPassword">Forgot password?</a>
+        <button class="button-8" id="button8">
+          <div class="sign-in1">Sign in</div>
+        </button>
+        <div class="or">OR</div>
+        <img class="container-95-child" alt="" src="./public/line-3.svg" />
+
+        <img class="container-95-item" alt="" src="./public/line-4.svg" />
+
+        <button class="button-9">
+          <div class="text10"></div>
+          <img class="frame-icon47" alt="" src="./public/frame28.svg" />
+        </button>
+        <button class="button-10">
+          <div class="text11"></div>
+          <img class="frame-icon47" alt="" src="./public/frame29.svg" />
+        </button>
+        <button class="button-11">
+          <div class="text12"></div>
+          <img class="frame-icon47" alt="" src="./public/frame30.svg" />
+        </button>
+        <div class="not-a-member-container" id="notAMember">
+          <span class="not-a-member">Not a member yet?</span>
+          <b class="register-now2">
+            <span class="span1"> </span>
+            <span class="register-now3">Register now</span>
+          </b>
+        </div>
+      </form>
+      <div class="softtools-parent6" id="groupContainer">
+        <b class="softtools18">SoftTools</b>
+        <img class="image-71-icon" alt="" src="./public/image-79.svg" />
+      </div>
+      <img class="image-80-icon" alt="" src="./public/image-80.svg" />
+
+      <img class="image-81-icon1" alt="" src="./public/image-81.svg" />
+    </div>
+
+    <script>
+      var forgotPassword = document.getElementById("forgotPassword");
+      if (forgotPassword) {
+        forgotPassword.addEventListener("click", function (e) {
+          window.location.href = "./reset-password.html";
+        });
+      }
+      
+      var button8 = document.getElementById("button8");
+      if (button8) {
+        button8.addEventListener("click", function (e) {
+          e.preventDefault(); // Prevent the default form submission behavior
+          window.location.href = "./index.html";
+        });
+      }
+      
+      var notAMember = document.getElementById("notAMember");
+      if (notAMember) {
+        notAMember.addEventListener("click", function (e) {
+          window.location.href = "./sign-up.html";
+        });
+      }
+      
+      var groupContainer = document.getElementById("groupContainer");
+      if (groupContainer) {
+        groupContainer.addEventListener("click", function (e) {
+          window.location.href = "./index.html";
+        });
+      }
+      </script>
+  </body>
+</html>
